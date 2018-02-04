@@ -1,0 +1,14 @@
+info:
+  component: Gateway Server
+
+spring:
+  application:
+    name: gateway-server
+
+server:
+  port: 8704
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

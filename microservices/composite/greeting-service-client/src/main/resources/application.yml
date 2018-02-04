@@ -1,0 +1,14 @@
+info:
+  component: Greeting Service Client
+
+spring:
+  application:
+    name: greeting-service-client
+
+server:
+  port: 8702
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
