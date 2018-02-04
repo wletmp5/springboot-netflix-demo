@@ -12,6 +12,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @RestController
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableHystrix
 @EnableZuulProxy
 @EnableEurekaClient
+@EnableSwagger2
 public class GreetingServiceClientApplication {
 
     GreetingServiceClient greetingServiceClient;

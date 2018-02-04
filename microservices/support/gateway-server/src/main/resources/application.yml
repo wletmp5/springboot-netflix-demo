@@ -7,8 +7,7 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
-    web:
-    skipPattern: (^cleanup.*|.+favicon.*)
+
 server:
   port: 8704
 
@@ -16,4 +15,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      expose: '*'
+  security:
+    enabled: false
 
