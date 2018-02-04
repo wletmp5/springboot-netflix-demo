@@ -14,6 +14,7 @@
         <module>microservices/composite/greeting-service-client</module>
         <module>microservices/support/hystrix-dashboard</module>
         <module>microservices/support/gateway-server</module>
+        <module>microservices/support/zipkin-server</module>
     </modules>
 
     <parent>

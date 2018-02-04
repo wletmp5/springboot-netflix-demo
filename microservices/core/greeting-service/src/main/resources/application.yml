@@ -4,7 +4,11 @@ info:
 spring:
   application:
     name: greeting-service
-
+  sleuth:
+      sampler:
+        percentage: 1.0
+      #web:
+      #skipPattern: (^cleanup.*|.+favicon.*)
 server:
   port: 8701
 
@@ -12,3 +16,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      expose: '*'
+  security:
+    enabled: false

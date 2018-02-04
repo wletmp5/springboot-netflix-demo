@@ -4,6 +4,11 @@ info:
 spring:
   application:
     name: greeting-service-client
+  sleuth:
+      sampler:
+        percentage: 1.0
+      #web:
+      #skipPattern: (^cleanup.*|.+favicon.*)
 
 server:
   port: 8702
